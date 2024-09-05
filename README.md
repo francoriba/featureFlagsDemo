@@ -10,5 +10,5 @@ Deployment steps:
   *    SPLIT_API_KEY = <Your API key obtained from settings in Split>
   *    FEATURE_FLAG_ID = <Name of the feature flag you've created>
 * Go inside the /deployment directory and use:
-    * ```docker-compose up --build -d``` (or just ```docker-compose up -d``` after first build) to deploy the api insede a docker container
+    * ```docker-compose up --build -d``` (or just ```docker-compose up -d``` after first build) to deploy the api inside a docker container
     * ```docker-compose down``` to stop the container
