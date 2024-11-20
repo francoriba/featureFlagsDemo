@@ -1,4 +1,3 @@
-```markdown
 # Feature Flags Demo with Split SDK
 
 ## Project Overview
@@ -133,4 +132,3 @@ The application can be deployed using Docker with the following options:
 
 ## Conclusion
 This project demonstrates how to implement feature flags in a Node.js application using the Split SDK. It adheres to best practices for both development and production environments, emphasizing scalability, security, and ease of deployment.
-```
