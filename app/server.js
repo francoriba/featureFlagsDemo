@@ -18,7 +18,7 @@ const featureFlagId = process.env.FEATURE_FLAG_ID;
 const factory = SplitFactory({
     core: {
         authorizationKey: apiKey, // API key for Split
-        key: 'test2' // This can be another environment variable if you want to parameterize it
+        key: featureFlagId
     },
     startup: {
         readyTimeout: 1.5 // Time to wait for the SDK to be ready
@@ -36,6 +36,7 @@ SplitIOClient.on(SplitIOClient.Event.SDK_READY, () => {
 
 // List of client IDs
 const clientIds = ['franco', 'juan', 'pedro', 'julio', 'maria', 'laura', 'luis']; 
+//const idClient = crypto.randomUUID()
 
 // Declare a route
 fastify.get('/', async function handler(request, reply) {
